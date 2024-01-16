@@ -1,0 +1,11 @@
+{
+  "name": "rsmithsg/328/hello",
+  "description": "My first F3 MVC project",
+  "authors": [{
+      "name": "Rob Smith",
+      "email": "smith.rob@student.greenriver.edu"
+    }],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
