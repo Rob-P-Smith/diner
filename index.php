@@ -17,6 +17,9 @@ $f3 = Base::instance();
 $f3->route('GET /', function () {
     echo "Diner";
     echo "\nNow";
+
+    $view = new Template();
+    echo $view->render('views/home.html');
 });
 
 $f3->run();
