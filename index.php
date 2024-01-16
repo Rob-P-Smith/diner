@@ -16,7 +16,7 @@ $f3 = Base::instance();
 
 $f3->route('GET /', function () {
     echo "Diner";
-    echo "Now";
+    echo "\nNow";
 });
 
 $f3->run();
