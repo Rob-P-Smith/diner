@@ -19,6 +19,11 @@ $f3->route('GET /', function () {
     echo $view->render('views/home.html');
 });
 
+$f3->route('GET|POST /breakfast', function () {
+    $view = new Template();
+    echo $view->render('views/breakfast-menu.html');
+});
+
 $f3->route('GET|POST /order1', function () {
 //    echo "orderformpart1";
     $view = new Template();
