@@ -20,9 +20,9 @@ $f3->route('GET /', function () {
 });
 
 $f3->route('GET /order1', function () {
-    echo "orderformpart1";
-//    $view = new Template();
-//    echo $view->render('views/order1.html');
+//    echo "orderformpart1";
+    $view = new Template();
+    echo $view->render('views/order-form-1.html');
 });
 
 #f3->route('GET/',
