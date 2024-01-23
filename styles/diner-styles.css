@@ -2,7 +2,11 @@ img {
     width: 50%;
 }
 
-a.button {
+a.button-default {
     background-color: pink;
     color: orange;
+}
+
+h1 {
+    color: red;
 }

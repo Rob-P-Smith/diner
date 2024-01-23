@@ -1,0 +1,46 @@
+[16-Jan-2024 17:52:01 UTC] PHP Fatal error:  Uncaught Error: Class "Base" not found in /home/rsmithsg/public_html/328/diner/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/rsmithsg/public_html/328/diner/index.php on line 13
+[16-Jan-2024 17:52:37 UTC] PHP Fatal error:  Uncaught Error: Class "Base" not found in /home/rsmithsg/public_html/328/diner/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/rsmithsg/public_html/328/diner/index.php on line 13
+[16-Jan-2024 17:53:35 UTC] PHP Fatal error:  Uncaught Error: Class "Base" not found in /home/rsmithsg/public_html/328/diner/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/rsmithsg/public_html/328/diner/index.php on line 13
+[16-Jan-2024 17:53:39 UTC] PHP Fatal error:  Uncaught Error: Class "Base" not found in /home/rsmithsg/public_html/328/diner/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/rsmithsg/public_html/328/diner/index.php on line 13
+[16-Jan-2024 17:55:00 UTC] PHP Fatal error:  Uncaught Error: Class "Base" not found in /home/rsmithsg/public_html/328/diner/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/rsmithsg/public_html/328/diner/index.php on line 13
+[16-Jan-2024 17:55:02 UTC] PHP Fatal error:  Uncaught Error: Class "Base" not found in /home/rsmithsg/public_html/328/diner/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/rsmithsg/public_html/328/diner/index.php on line 13
+[16-Jan-2024 17:55:07 UTC] PHP Fatal error:  Uncaught Error: Class "Base" not found in /home/rsmithsg/public_html/328/diner/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/rsmithsg/public_html/328/diner/index.php on line 13
+[16-Jan-2024 17:55:10 UTC] PHP Fatal error:  Uncaught Error: Class "Base" not found in /home/rsmithsg/public_html/328/diner/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/rsmithsg/public_html/328/diner/index.php on line 13
+[16-Jan-2024 17:55:14 UTC] PHP Fatal error:  Uncaught Error: Class "Base" not found in /home/rsmithsg/public_html/328/diner/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/rsmithsg/public_html/328/diner/index.php on line 13
+[16-Jan-2024 17:55:25 UTC] PHP Fatal error:  Uncaught Error: Class "Base" not found in /home/rsmithsg/public_html/328/diner/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/rsmithsg/public_html/328/diner/index.php on line 13
+[16-Jan-2024 17:56:58 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "vendor" in /home/rsmithsg/public_html/328/diner/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/rsmithsg/public_html/328/diner/index.php on line 12
+[16-Jan-2024 18:12:43 UTC] HTTP 404 (GET /index.php)
+[16-Jan-2024 18:12:43 UTC] [328/diner/index.php:22] Base->run()
