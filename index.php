@@ -15,9 +15,8 @@ require_once ('vendor/autoload.php');
 $f3 = Base::instance();
 
 $f3->route('GET /', function () {
-    echo "home";
-//    $view = new Template();
-//    echo $view->render('views/order1.html');
+    $view = new Template();
+    echo $view->render('views/home.html');
 });
 
 $f3->route('GET /order1', function () {
