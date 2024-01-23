@@ -25,12 +25,14 @@ $f3->route('GET|POST /breakfast', function () {
 });
 
 $f3->route('GET|POST /order1', function () {
-//    echo "orderformpart1";
     $view = new Template();
     echo $view->render('views/order-form-1.html');
 });
 
-#f3->route('GET/',
+$f3->route('GET|POST /summary', function () {
+    $view = new Template();
+    echo $view->render('views/order-summary.html');
+});
 
 $f3->run();
 

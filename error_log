@@ -44,3 +44,7 @@ Stack trace:
   thrown in /home/rsmithsg/public_html/328/diner/index.php on line 12
 [16-Jan-2024 18:12:43 UTC] HTTP 404 (GET /index.php)
 [16-Jan-2024 18:12:43 UTC] [328/diner/index.php:22] Base->run()
+[23-Jan-2024 18:24:32 UTC] HTTP 404 (GET /order)
+[23-Jan-2024 18:24:32 UTC] [328/diner/index.php:35] Base->run()
+[23-Jan-2024 18:24:43 UTC] HTTP 404 (GET /styles/styles.css)
+[23-Jan-2024 18:24:43 UTC] [328/diner/index.php:34] Base->run()
