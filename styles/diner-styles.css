@@ -1,12 +1,12 @@
 img {
+    /* Temporary fix! */
     width: 50%;
 }
 
-a.button-default {
-    background-color: pink;
-    color: orange;
+a.btn-primary {
+    background-color: darkolivegreen;
 }
 
 h1 {
-    color: red;
+    color: darkolivegreen;
 }

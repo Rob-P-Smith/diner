@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,10 +8,14 @@
 </head>
 <body>
 <div class="container">
-<h1>GRC Diner</h1>
-<h2>Serving the GRC Community since 1990</h2>
-<p>We serve the best ___ in the universe. nonono</p>
-<a type="button" class="btn btn-primary" target="order1">Place an Order</a>
+    <h1>GRC Diner</h1>
+    <h2>Serving the GRC Community since 1990</h2>
+    <p>We serve the best hamburgers in the universe.</p>
+    <img src="images/diner.jpg" alt="Diner pic" /><br><br>
+
+    <h4>View Menus</h4>
+    <a href="breakfast">Breakfast</a><br><br>
+    <a type="button" class="btn btn-primary" href="order1">Place an Order</a>
 </div>
 </body>
 </html>
