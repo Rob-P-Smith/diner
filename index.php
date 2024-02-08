@@ -12,6 +12,7 @@ error_reporting(E_ALL);
 // Require the autoload file
 require_once('vendor/autoload.php');
 require_once('model/data-layer.php');
+require_once('model/validator.php');
 
 // Instantiate Fat-Free framework (F3)
 $f3 = Base::instance(); //static method
@@ -42,22 +43,31 @@ $f3->route('GET|POST /order1', function ($f3) {
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         $food = "";
+        $meal = "";
 
-        $food = "";
         if (validFood($_POST['food'])) {
+            $food = $_POST['food'];
+        } else{
+            $f3->set('errors["food"]', "Invalid Food");
         }
-        // Validate the data
-        $food = $_POST['food'];
+
+        if ((validMeal($_POST['meal'])) and (isset($_POST['meal'])) ) {
+            $meal = $_POST['meal'];
+        } else{
+            $f3->set('errors["meal"]', "Invalid Meal");
+        }
+
         $meal = $_POST['meal'];
 
         if (empty($f3->get('errors'))) {
-        }
+
         // Put the data in the session array
         $f3->set('SESSION.food', $food);
         $f3->set('SESSION.meal', $meal);
 
         // Redirect to order2 route
         $f3->reroute('order2');
+        }
     }
 
     // Display a view page

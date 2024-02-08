@@ -13,9 +13,16 @@
                 <input class="form-control" type="text" name="food" id="food" value="">
 
                 <!-- Display an error if there is one -->
-                <check if="{{ isset(@errors['food])}}">
-                    {{ @errors['food']}}
-                </check>
+                <span>
+                    <check if="{{ isset(@errors['food'])}}">
+                        {{ @errors['food']}}
+                    </check>
+                </span>
+                <span>
+                    <check if="{{ isset(@errors['meal'])}}">
+                        {{ @errors['meal']}}
+                    </check>
+                </span>
             </div>
         </div>
         <br>
