@@ -42,6 +42,8 @@ $f3->route('GET|POST /order1', function ($f3) {
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         $food = "";
+
+        $food = "";
         if (validFood($_POST['food'])) {
         }
         // Validate the data
