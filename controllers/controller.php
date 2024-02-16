@@ -101,7 +101,8 @@ class Controller
         echo $view->render('views/order-summary.html');
     }
 
-    function breakfast(){
+    function breakfast()
+    {
         $view = new Template();
         echo $view->render('views/breakfast-menu.html');
     }
