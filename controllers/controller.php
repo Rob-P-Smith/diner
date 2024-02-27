@@ -106,6 +106,7 @@ class Controller
     function summary()
     {
         //echo "Thank you for your order!";
+        $this->_f3->set('orderid',$GLOBALS['dataLayer']->saveOrder($this->_f3->get('SESSION.order')));
 
         // Display a view page
         $view = new Template();

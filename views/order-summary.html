@@ -7,6 +7,10 @@
         {{ @SESSION.order->getMeal() }}</p>
     <p>Condiments:  {{ @SESSION.order->getCondiments() }}</p>
 
+
+    <p>Order ID: {{@orderid}}</p>
+
+
     <a href="{{ @BASE }}">Home Page</a>
     <a href="order1">Place another order</a>
 

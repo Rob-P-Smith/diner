@@ -33,7 +33,7 @@ class DataLayer
         try {
             // Instantiate a PDO database connection object
             $this->_dbh = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD);
-            echo 'Connected to database!';
+//            echo 'Connected to database!';
         }
         catch (PDOException $e) {
             echo $e->getMessage(); # temporary
@@ -62,6 +62,18 @@ class DataLayer
 
         //Return the results
         return $result;
+    }
+
+    function saveOrder($order){
+        $sql = "INSERT INTO orders (food, meal, condiments) VALUES (:food, :meal, :condiments)";
+        $statement = $this->_dbh->prepare($sql);
+        $statement->bindValue(':food', $order->getFood());
+        $statement->bindValue(':meal', $order->getMeal());
+        $statement->bindValue(':condiments', $order->getCondiments());
+//        $statement->bindValue(':time', Date('Y,m,d'));
+
+        $statement->execute();
+        return $this->_dbh->lastInsertId();
     }
 
     static function getMeals()
