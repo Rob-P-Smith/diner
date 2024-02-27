@@ -11,11 +11,33 @@ error_reporting(E_ALL);
 
 // Require the autoload file
 require_once ('vendor/autoload.php');
-require_once ('model/validator.php');
+
+// Test my Order class
+/*
+$order = new Order("pizza", "lunch", "sriracha");
+var_dump($order);
+*/
+
+// Test my DataLayer class
+//var_dump( DataLayer::getMeals() );
+//var_dump( DataLayer::getCondiments() );
+
+// Test Validate class
+//echo Validate::validMeal('aloo gobi');
 
 // Instantiate Fat-Free framework (F3)
 $f3 = Base::instance(); //static method
 $con = new Controller($f3);
+
+// Instantiate DataLayer class
+$dataLayer = new DataLayer();
+
+// Test DataLayer class
+/*
+echo "<pre>";
+var_dump($dataLayer->getOrders());
+echo "</pre>";
+*/
 
 // Define a default route
 $f3->route('GET /', function() {
@@ -24,7 +46,11 @@ $f3->route('GET /', function() {
 
 // Define a breakfast route
 $f3->route('GET /breakfast', function() {
-    $GLOBALS['con']->breakfast();
+    //echo "Breakfast";
+
+    // Display a view page
+    $view = new Template();
+    echo $view->render('views/breakfast-menu.html');
 });
 
 // Define a order form 1 route
@@ -39,7 +65,12 @@ $f3->route('GET|POST /order2', function($f3) {
 
 // Define an order summary route
 $f3->route('GET /summary', function() {
-    $GLOBALS['con']->orderSummary();
+    $GLOBALS['con']->summary();
+});
+
+// Define a view orders route
+$f3->route('GET /view-orders', function() {
+    $GLOBALS['con']->view();
 });
 
 // Run Fat-Free

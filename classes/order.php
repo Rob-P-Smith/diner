@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Order class for diner application represents a food order
- * @author Rob Smith
- * @version 1.0
+ * The Order class represents a food order for the GRC Diner
+ * @author Tina Ostrander
+ * @copyright 2024
  */
 class Order
 {
@@ -11,10 +11,15 @@ class Order
     private $_meal;
     private $_condiments;
 
-    /**Default constructor instantiates an Order object
-     * @param $_food
-     * @param $_meal
-     * @param $_condiments
+    /**
+     * Default constructor instantiates an Order object
+     * new Order()
+     * new Order("tacos")
+     * new Order("tacos", "lunch")
+     * new Order("tacos", "lunch", "salsa, guacamole")
+     * @param string $food
+     * @param string $meal
+     * @param string $condiments
      */
     public function __construct($food="", $meal="", $condiments="")
     {
@@ -24,7 +29,7 @@ class Order
     }
 
     /**
-     * Get the food
+     * Return the food that was ordered
      * @return string
      */
     public function getFood()
@@ -33,16 +38,16 @@ class Order
     }
 
     /**
-     * Set the food
+     * Set the food that was ordered
      * @param string $food
      */
-    public function setFood($food): void
+    public function setFood($food)
     {
         $this->_food = $food;
     }
 
     /**
-     * Get the meal
+     * Return the meal that was ordered
      * @return string
      */
     public function getMeal()
@@ -51,16 +56,16 @@ class Order
     }
 
     /**
-     * set the meal
+     * Set the meal that was ordered
      * @param string $meal
      */
-    public function setMeal($meal): void
+    public function setMeal($meal)
     {
         $this->_meal = $meal;
     }
 
     /**
-     * get the condiments
+     * Return the condiments that were ordered
      * @return string
      */
     public function getCondiments()
@@ -69,10 +74,10 @@ class Order
     }
 
     /**
-     * set the condiments
+     * Set the condiments that were ordered
      * @param string $condiments
      */
-    public function setCondiments($condiments): void
+    public function setCondiments($condiments)
     {
         $this->_condiments = $condiments;
     }

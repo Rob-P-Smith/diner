@@ -7,16 +7,10 @@
 
 class Validate
 {
-// Return true if food is valid
+    // Return true if food is valid
     static function validFood($food)
     {
-        if (trim($food == "")) {
-            return false;
-        }
-        if (!ctype_alpha($food)) {
-            return false;
-        }
-        return true;
+        return trim($food) != "";
     }
 
     static function validMeal($meal)
