@@ -15,7 +15,7 @@
  */
 
 // Require the file that contains DB config
-require_once($_SERVER['DOCUMENT_ROOT'].'/../config.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/../config2.php');
 
 
 class DataLayer
